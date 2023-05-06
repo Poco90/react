@@ -44,9 +44,10 @@ function ArticleList() {
         setArticleList(updatedList);
         setSelectedArticle(null);
       }
-      setFormData({ title: '', body: '', published: false });
-    } catch (error) {
-      console.log(error);
+    setFormData({ title: "", body: "", published: false });
+    window.location.reload(); // reload the page
+  } catch (error) {
+    console.log(error);
     }
   };
 
